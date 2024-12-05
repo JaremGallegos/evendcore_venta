@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Landing\" />
+    <Folder Include="Controllers\POS\" />
+    <Folder Include="Controllers\Shared\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\Landing\" />
+    <Folder Include="Models\POS\" />
+    <Folder Include="Models\Shared\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Landing\" />
+    <Folder Include="Services\POS\" />
+    <Folder Include="Services\Shared\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Auth\" />
+    <Folder Include="ViewModels\Landing\" />
+    <Folder Include="ViewModels\POS\" />
+    <Folder Include="Views\POS\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\landing\" />
+    <Folder Include="wwwroot\pos\" />
+  </ItemGroup>
+
+</Project>
