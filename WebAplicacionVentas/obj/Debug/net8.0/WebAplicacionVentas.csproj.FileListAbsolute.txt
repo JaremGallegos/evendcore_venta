@@ -28,3 +28,7 @@ D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\r
 D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\WebAplicacionVentas.pdb
 D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\WebAplicacionVentas.genruntimeconfig.cache
 D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\ref\WebAplicacionVentas.dll
+D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\WebAplicacionVentas.sourcelink.json
+D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\WebAplicacionVentas.csproj.AssemblyReference.cache
+D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\obj\Debug\net8.0\WebAplic.4D909211.Up2Date
