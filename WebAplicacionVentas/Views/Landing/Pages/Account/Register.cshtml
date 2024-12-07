@@ -1,0 +1,94 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var listaTipos = new List<(string tipo, string titulo, string ejemplo)> {
+        ("email", "Correo", "jonsmith.mobbin@gmail.com"),
+        ("phone", "Teléfono", "+1 650 213 7379"),
+        ("password", "Contraseña", "")
+    };
+}
+
+<div class="min-h-screen bg-gray-50 flex flex-col">
+    <main class="flex-1">
+        <div class="container max-w-2xl mx-auto px-4 py-8">
+            <!-- Sección de Encabezado de Registro-->
+            <div class="text-center mb-3">
+                <img src="~/images/Mistral-Logo.png"
+                     class="mx-auto mb-1"
+                     style="width: 120px; height: 40;"
+                     alt="Mistral"/>
+
+                <ul class="step mb-3">
+                    <li class="step-item active"><a href="#!" data-tooltip="Regístrese">Regístrese</a></li>
+                    <li class="step-item"><a href="#!" data-tooltip="Verifique">Verifique</a></li>
+                    <li class="step-item"><a href="#!" data-tooltip="Pague">Pague</a></li>
+                    <li class="step-item"><a href="#!" data-tooltip="Completado">Completado</a></li>
+                </ul>
+
+                <h1 class="text-3xl font-semibold mb-2">Demos el Primer Paso</h1>
+                <p class="text-gray-600 mb-0">
+                    Crea una cuenta para tener acceso a todas las aplicaciones de Mistral.
+                </p>
+                <p class="text-gray-600 font-medium">¡Esto es obligatorio!</p>
+            </div>
+            <!-- #End Sección de Encabezado de Registro -->
+
+            <!-- Sección de Formulario Crear Cuenta -->
+            <div class="space-y-2">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-0">Crear una Cuenta</h2>
+                    <p class="text-gray-600 mb-3">
+                        Cree una cuenta Mistral para acceder a todos los productos Mistral, incluido eVend-Ventas.
+                    </p>
+                    <form class="space-y-4">
+                        @for(int i = 0; i < listaTipos.Count - 1; i++) {
+                            <div class="form-group mt-0">
+                                <label class="form-label mb-0" for="@listaTipos[i].tipo">@listaTipos[i].titulo</label>
+                                <input class="form-input" id="@listaTipos[i].tipo" type="@listaTipos[i].tipo" placeholder="@listaTipos[i].ejemplo" />
+                                <p class="text-tiny text-gray-500">Esto ayuda a proteger y verificar su cuenta.</p>
+                            </div>
+                        }
+                        <div class="form-group mt-2">
+                            <label class="form-label mb-0" for="@listaTipos[2].tipo">@listaTipos[2].titulo</label>
+                            <div class="relative">
+                                <input class="form-input pr-10" id="@listaTipos[2].tipo" type="@listaTipos[2].tipo" />
+                                <button
+                                    type="button"
+                                    id="togglePassword"
+                                    class="absolute inset-y-0 right-0 flex items-center px-3 text-gray-500 focus:outline-none">
+                                    <i id="eyeIcon" class="fas fa-eye-slash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <input
+                            type="submit"
+                            value="Create Account"
+                            asp-action="Verificacion"
+                            asp-controller="Register"
+                            class="form-input w-full bg-indigo-600 hover:bg-indigo-700 text-white" />
+                        <p class="text-sm text-center text-gray-600">
+                            Al hacer clic en Crear cuenta, acepta nuestros términos y condiciones. <br> <a class="text-primary hover:underline">Condiciones de Uso</a> and <a class="text-primary hover:underline">Política de Privacidad</a>
+                        </p>
+                        <div class="text-center space-y-2">
+                            <p class="text-gray-600 text-sm">¿Ya tienes una cuenta?</p>
+                            <button class="form-input w-full">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- #End Sección de Formulario Crear Cuenta -->
+
+        </div>
+    </main>
+</div>
+<script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('@listaTipos[2].tipo');
+    const eyeIcon = document.getElementById('eyeIcon');
+    togglePassword.addEventListener('click', () => {
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = isPassword ? 'text' : 'password';
+        eyeIcon.className = isPassword ? 'fas fa-eye' : 'fa fa-eye-slash';
+    })
+</script>

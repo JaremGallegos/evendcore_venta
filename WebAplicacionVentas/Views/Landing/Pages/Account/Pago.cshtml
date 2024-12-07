@@ -1,0 +1,167 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var listaTarjetas = new List<(string tipos, string imagen)>
+    {
+        ("Visa", "https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Visa-icon.png"),
+        ("Mastercard", "https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-Blue-icon.png"),
+        ("Amex", "https://cdn-icons-png.flaticon.com/512/349/349228.png"),
+        ("Discover", "https://cdn0.iconfinder.com/data/icons/shift-ecommerce/32/Discover-512.png")
+    };
+}
+<div class="min-h-screen bg-gray-50 flex flex-col">
+    <main class="flex-1">
+        <div class="container max-w-2xl mx-auto px-4 py-8">
+            <!-- Sección de Encabezado de Pago -->
+            <div class="text-center mb-4">
+                <img src="~/images/Mistral-Logo.png"
+                     class="mx-auto mb-1"
+                     style="width: 120px; height: 40;"
+                     alt="Mistral"/>
+
+                <ul class="step mb-3">
+                    <li class="step-item active"><a href="#!" data-tooltip="Regístrese">Regístrese</a></li>
+                    <li class="step-item active"><a href="#!" data-tooltip="Verifique">Verifique</a></li>
+                    <li class="step-item active"><a href="#!" data-tooltip="Pague">Pague</a></li>
+                    <li class="step-item"><a href="#!" data-tooltip="Completado">Completado</a></li>
+                </ul>
+            </div>
+            <!-- #End Sección Encabezado de Pago -->
+
+            <!-- Sección de Transacción -->
+            <div class="card">
+                <div class="card-body p-6">
+                    <div class="flex items-start gap-3 mb-2">
+                        <img
+                            src="https://play-lh.googleusercontent.com/NbNyYQ60UqW-yg9_LxXnFqJX8Ll9e7WzLl0pFNh1Tmcx7F0pBSJKk9HYovZx4UZybFVr=w240-h480"
+                            alt="Imagen no Encontrada"
+                            style="width: 40px; height: 40px;"
+                            class="rounded" />
+                        <div>
+                            <h2 class="text-xl font-semibold">Quicken Simplifi</h2>
+                            <div class="flex items-baseline gap-2 mt-1">
+                                <span class="text-gray-600 text-tiny">$3.99/month | </span>
+                                <span class="text-tiny text-gray-500">($47.88 billed annually) | </span>
+                                <span class="text-tiny text-red-500 font-medium">$35.91/year 25% off discount applied</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">Subscription term: Feb 04, 2024 - Feb 03, 2025</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="space-y-6 mt-2">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Account Information</h3>
+                                <div class="space-y-2">
+                                    <label for="email" class="form-label mb-0">Email / Login</label>
+                                    <input
+                                        class="form-input mt-0"
+                                        id="email"
+                                        type="email"
+                                        value="jonsmith.mobbin@gmail.com"
+                                        readonly />
+                                    <p class="text-tiny text-gray-500 mt-0">
+                                        This email will be used as your login. If you already have an account, enter your email above.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp space-y-4 container">
+                                <div class="rounded-lg p-3 space-y-4">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-2">
+                                            <div class="form-group">
+                                                <label class="form-switch">
+                                                    <input type="checkbox" />
+                                                    <i class="form-icon"></i> Pay with Credit / Debit Card
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-2">
+                                            @for (int i = 0; i < listaTarjetas.Count; i++) {
+                                                <img
+                                                    alt="@listaTarjetas[i].tipos"
+                                                    style="width: 32px; height: 20px;"
+                                                    class="h-5 w-auto opacity-50"
+                                                    src="@listaTarjetas[i].imagen"/>
+                                            }
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="grid gap-4 grid-cols-3">
+                                        <div class="space-y-2">
+                                            <label for="cardNumber" class="form-label mb-0">Card Number</label>
+                                            <input id="cardNumber" class="form-input mt-0" placeholder="4596 9500 1001 8296" />
+                                        </div>
+                                        <div class="space-y-2">
+                                            <label for="cardExpiracion" class="form-label mb-0">Expiration</label>
+                                            <input id="cardExpiracion" class="form-input mt-0" placeholder="01/29" />
+                                        </div>
+                                        <div class="space-y-2">
+                                            <div class="flex items-center gap-1 mb-0">
+                                                <label for="CVV" class="form-label mb-0">Security Code</label>
+                                                <i class="fa-solid fa-circle-info h-4 w-4 text-gray-400"></i>
+                                            </div>
+                                            <input id="CVV" placeholder="291" class="form-input mt-0"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid gap-4 grid-cols-3 mt-1">
+                                        <div class="col-span-2 space-y-2">
+                                            <label for="cardName" class="form-label mb-0">Name on Card</label>
+                                            <input id="cardName" placeholder="Jon Smith" class="form-input mt-0" />
+                                        </div>
+                                        <div class="space-y-2">
+                                            <label for="cardZip" class="form-label mb-0">Zip Code</label>
+                                            <input id="cardZip" placeholder="94025" class="form-input mt-0" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="demo-card-square mdl-shadow--2dp space-y-4 container">
+                                <div class="rounded-lg p-3 space-y-4">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-2">
+                                            <div class="form-group">
+                                                <label class="form-switch">
+                                                    <input type="checkbox" />
+                                                    <i class="form-icon"></i> Pay with Paypal
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-2">
+                                            <img
+                                                alt="Paypal"
+                                                style="width: 80px; height: 20px;"
+                                                class="h-5 w-auto"
+                                                src="https://cdn.iconscout.com/icon/free/png-256/free-paypal-54-675727.png?f=webp"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="submit"
+                                value="Submit Order"
+                                asp-action="Completado"
+                                asp-controller="Register"
+                                class="form-input w-full bg-indigo-600 hover:bg-indigo-700 text-white" />
+
+                            <p class="text-sm text-center text-gray-600 mt-1">
+                                Your annual subscription starts at purchase<br>and will renew each year.
+                            </p>
+                            <p class="text-tiny text-center text-gray-500 mt-0">
+                               You may cancel at anytime
+                            </p>
+                            <p class="text-tiny text-center text-gray-500">
+                                By continuing you agree to the Simplifi <br>
+                                <a class="text-primary hover:underline">Terms of Use</a> and <a class="text-primary hover:underline">Full terms & Conditions</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

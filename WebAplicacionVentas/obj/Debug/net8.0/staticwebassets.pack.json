@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\images\\Mistral-Logo.png",
+      "PackagePath": "staticwebassets\\images\\Mistral-Logo.png"
+    },
+    {
       "Id": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

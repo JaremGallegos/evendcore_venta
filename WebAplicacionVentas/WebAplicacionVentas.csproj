@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Landing\" />
-    <Folder Include="Controllers\POS\" />
+    <Folder Include="Controllers\Landing\Pages\Account\REST\" />
     <Folder Include="Controllers\Shared\" />
     <Folder Include="Helpers\" />
     <Folder Include="Interfaces\" />
@@ -23,7 +22,11 @@
     <Folder Include="ViewModels\Auth\" />
     <Folder Include="ViewModels\Landing\" />
     <Folder Include="ViewModels\POS\" />
-    <Folder Include="Views\POS\" />
+    <Folder Include="Views\Landing\Pages\Attendance\" />
+    <Folder Include="Views\Landing\Pages\Documentation\Learn\" />
+    <Folder Include="Views\Landing\Pages\Forum\" />
+    <Folder Include="Views\Landing\Pages\Updates\" />
+    <Folder Include="Views\POS\Home\Modules\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\landing\" />
     <Folder Include="wwwroot\pos\" />

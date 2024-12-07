@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var listaVerificacion = new List<(string tipo, string nombre, string titulo, string ejemplo)> {
+        ("text", "Seguridad", "Ingrese el Código de 6 Dígitos", "000000"),
+        ("text", "PIN", "Ingrese un PIN de 4 Dígitos", "1234"),
+  };
+}
+<div class="min-h-screen bg-gray-50 flex flex-col">
+    <main class="flex-1">
+        <div class="container max-w-2xl mx-auto px-4 py-8">
+            <div class="text-center mb-4">
+                <img src="~/images/Mistral-Logo.png"
+                     class="mx-auto mb-1"
+                     style="width: 120px; height: 40;"
+                     alt="Mistral"/>
+
+                <ul class="step mb-3">
+                    <li class="step-item active"><a href="#!" data-tooltip="Regístrese">Regístrese</a></li>
+                    <li class="step-item active"><a href="#!" data-tooltip="Verifique">Verifique</a></li>
+                    <li class="step-item"><a href="#!" data-tooltip="Pague">Pague</a></li>
+                    <li class="step-item"><a href="#!" data-tooltip="Completado">Completado</a></li>
+                </ul>
+
+                <h1 class="text-3xl font-semibold mb-2">You&apos;re Almost Done!</h1>
+                <p class="text-gray-600 mb-0">
+                    Create an account in order to gain access to all Quicken applications.
+                </p>
+                <p class="text-gray-600 font-medium">This is required!</p>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Check your inbox</h2>
+                    <p class="text-gray-600">
+                        Secure your account by verifying your email.
+                        <br>
+                        Enter the 6-digit verification code we sent to:
+                    </p>
+                    <p class="font-medium mt-2">jonsmith.mobbin@@gmail.com</p>
+                </div>
+
+                <form class="space-y-4">
+                    @for (int i = 0; i < listaVerificacion.Count; i++) {
+                        <div class="mt-0 form-group">
+                            <label for="@listaVerificacion[i].nombre" class=" form-label mb-0">
+                                @listaVerificacion[i].titulo
+                            </label>
+                            <input type="@listaVerificacion[i].tipo" id="@listaVerificacion[i].nombre" class="form-input text-center text-lg tracking-widest" placeholder="------"/>
+                            <p class="text-red-500 text-tiny">Please enter the verification code.</p>
+                        </div>
+                    }
+                    <input
+                        type="submit"
+                        class="form-input w-full bg-indigo-600 hover:bg-indigo-700 text-white"
+                        asp-action="Pago"
+                        asp-controller="Register"
+                        value="Verificar">
+                    <div class="text-center">
+                        <a class="text-primary hover:underline">Email me another code</a>
+                    </div>
+                    <div class="flex items-center justify-between pt-4">
+                        <button asp-action="RegistrarUsuario"
+                                asp-controller="Account"
+                                class="btn btn-error bg-gray-50">Volver</button>
+                        <a class="text-primary hover:underline">I cannot access my email</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>

@@ -3,27 +3,27 @@
 *@
 @{
     var modulos = new List<string>(){
-        "Inicio", "Documentación", "Actualizaciones", "Comentarios"
+        "Inicio", "Documentación", "Actualizaciones", "Foro", "Asistencia"
     };
 }
 <header class="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="h-16 flex items-center justify-between">
             <div class="flex items-center space-x-8">
-                <a href="/" class="text-2xl font-bold text-indigo-600">
+                <p class="text-2xl font-bold text-indigo-600 hover:no-underline no-underline">
                     eVend
-                </a>
+                </p>
                 <nav class="mb:flex items-center space-x-4">
                     @foreach (string modulo in modulos) {
-                        <a href="#" class="text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors">
+                        <a class="text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors hover:no-underline no-underline">
                             @modulo
                         </a>
                     }
                 </nav>
             </div>
             <div class="flex items-center space-x-4">
-                <button class="btn">Iniciar Sesión</button>
-                <button class="btn btn-primary">Registrarse</button>
+                <a class="btn" asp-controller="Pages" asp-action="Index">Iniciar Sesión</a>
+                <a class="btn btn-primary" asp-controller="Register" asp-action="Register">Registrarse</a>
             </div>
         </div>
     </div>

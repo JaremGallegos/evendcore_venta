@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="min-h-screen bg-gray-50 flex flex-col">
+    <main class="flex-1">
+        <div class="container max-w-2xl mx-auto px-4 py-8">
+            <div class="text-center mb-4">
+                <img
+                    src="~/images/Mistral-Logo.png"
+                    class="mx-auto mb-1"
+                    style="width: 120px; height: 40;"
+                    alt="Mistral" />
+
+                <ul class="step mb-3">
+                    <li class="step-item active"><a href="#!" data-tooltip="Regístrese">Regístrese</a></li>
+                    <li class="step-item active"><a href="#!" data-tooltip="Verifique">Verifique</a></li>
+                    <li class="step-item active"><a href="#!" data-tooltip="Pague">Pague</a></li>
+                    <li class="step-item active"><a href="#!" data-tooltip="Completado">Completado</a></li>
+                </ul>
+            </div>
+
+            <div class="card border-none shadow-lg">
+                <div class="card-body p-6 flex flex-col items-center text-center">
+                    <div class="w-full max-w-md mb-4 mt-2">
+                        <img
+                            src="https://cdni.iconscout.com/illustration/premium/thumb/payment-success-illustration-download-in-svg-png-gif-file-formats--successful-done-received-card-online-shopping-pack-e-commerce-illustrations-5902141.png?f=webp"
+                            class="w-full mx-auto"
+                            alt="Success illustration"
+                            style="width:400px; height: 300px;" />
+                    </div>
+                    <h1 class="text-indigo-600 text-3xl font-semibold mb-0">
+                        Awesome!
+                    </h1>
+                    <p class="text-gray-600 mb-3 mt-0">
+                        You're in.
+                    </p>
+                    <a asp-action="Login" asp-controller="Login" class="form-input w-full bg-indigo-600 hover:bg-indigo-700 hover:no-underline text-white mb-2 no-underline">
+                        LET'S GET STARTED
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center text-sm text-gray-500 mt-4 space-y-4">
+                <p>* Annual sale price is applicable to first year of subscription only.</p>
+                <p class="mb-0 mt-2">
+                    <a asp-action="" asp-controller="" class="text-indigo-600 hover:underline">Terms of Use</a> |
+                    <a asp-action="" asp-controller="" class="text-indigo-600 hover:underline">Privacy</a>
+                </p>
+                <p class="mt-0">© 2024 Quicken Inc. All rights reserved. Quicken is a registered trademark of Rocket Mortgage, LLC, used under license.</p>
+            </div>
+        </div>
+    </main>
+</div>

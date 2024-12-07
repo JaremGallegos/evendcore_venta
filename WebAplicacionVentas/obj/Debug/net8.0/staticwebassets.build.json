@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZV2DPOdAAIEuOLH+GkmxhIz6t5MdcGoWb+XDr8n5Z6o=",
+  "Hash": "9RP34dHhydlmqRUlDceUEtVjwANFdGyk57WS69RTjOg=",
   "Source": "WebAplicacionVentas",
   "BasePath": "_content/WebAplicacionVentas",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\images\\Mistral-Logo.png",
+      "SourceId": "WebAplicacionVentas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\",
+      "BasePath": "_content/WebAplicacionVentas",
+      "RelativePath": "images/Mistral-Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Mistral-Logo.png"
     },
     {
       "Identity": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\js\\site.js",

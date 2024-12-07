@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<header class="bg-white border-b px-4 py-2 flex items-center justify-between">
+    <div class="flex items-center gap-4 my-2">
+    <!-- Barra lateral de módulos -->
+        <div x-data="{ isOpen: false }" class="relative">
+            <!-- Trigger -->
+            <button @@click="isOpen = !isOpen" class="flex p-2 rounded hover:bg-gray-200 focus:outline-none h-6 w-6">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Modal Contenido -->
+            <partial name="Partial/_Sidebar" />
+
+            <!-- Logo de la empresa -->
+        </div>
+        <h4 class="m-auto">Jarem</h4>
+    <!-- Parte final de la modal -->
+    </div>
+    <div class="flex items-center gap-4">
+        <button class="btn btn-link">Log in</button>
+        <button class="btn">Get a Demo</button>
+        <button class="btn btn-primary">Start free trial</button>
+    </div>
+</header>

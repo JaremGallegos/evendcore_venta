@@ -1,0 +1,144 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+    string[] iconos = new string[] { "7", "8", "9", "4", "5", "6", "1", "2", "3", "➔", "0", "✔" };
+    SortedDictionary<String, String> chips = new SortedDictionary<String, String>
+    {
+        { "fa-brands fa-ideal", "Intuitivo" },
+        { "fa-solid fa-check", "Eficiente" },
+        { "fa-solid fa-code-compare", "Flexible" },
+        { "fa-solid fa-expand", "Escalable" },
+        { "fa-solid fa-toggle-on", "Sencillo" },
+        { "fa-solid fa-spinner", "Accesible" },
+        { "fa-solid fa-hand-point-up", "Fiable" },
+        { "fa-solid fa-bolt", "Rápido" },
+        { "fa-solid fa-compass", "Adaptable" },
+        { "fa-brands fa-medium", "Moderno" }
+    };
+}
+<div class="min-h-screen bg-gray-50 grid md:grid-cols-2 gap-4 p-4">
+    <!-- #region Header Section -->
+    <div class="flex items-center justify-center">
+        <div class="max-w-md space-y-6">
+            <div class="flex flex-col items-center text-center space-y-4">
+                <figure class="avatar avatar-xl" style="width: 100px; height: 100px;">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHG7afCHA-h-g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710350532502?e=1738195200&v=beta&t=2PlX6FrgdZio6A5_N8OFpGKfinRRYtYjApSfO7Nz2Js"
+                        style="width: 100px; height: 100px;" alt="Jarem Gallegos">
+                    <i class="avatar-presence online"></i>
+                </figure>
+                <div class="space-y-2">
+                    <p class="text-lg font-medium">
+                        Nothing short of groundbreaking for designers.
+                        It immediately changes how I work and makes me
+                        10x more productive as a web designer.
+                    </p>
+                    <div class="text-sm text-muted-foreground">
+                        <p class="font-medium">@@Mistral</p>
+                        <p>Backend Developer, DevOps</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="font-medium">400,000+ designers & developers have used eVend</p>
+                <p class="text-sm text-muted-foreground">Library addToPin build websites faster</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div class="grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 col-auto">
+                    @foreach (var chip in chips)
+                    {
+                        <span class="chip">
+                            <i class="@chip.Key"></i>&nbsp;@chip.Value
+                        </span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Login Form Section-->
+    <div class="flex items-center justify-center">
+        <div class="card w-full max-w-md">
+            <div class="card-header">
+                <div class="card-body">
+                    <h3 class="card-title text-2xl font-semibold text-left text-gray-800">
+                        Iniciar Sesión
+                    </h3>
+                    <p class="text-[14px] text-left text-gray-600 leading-snug mb-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam justo, efficitur rhoncus
+                        eros eget, pharetra congue dui. Donec nec varius lectus.
+                    </p>
+                    <form action="#" method="post" id="loginForm">
+                        <div class="flex items-center justify-center mt-2">
+                            <div
+                                class="mdl-textfield mdl-js-textfield space-y-2 flex flex-col items-center justify-center">
+                                <input class="mdl-textfield__input text-center text-2xl tracking-widest" type="password"
+                                    id="PIN" maxlength="4" oninput="handlePinInput()" />
+                                <label class="mdl-textfield__label text-sm text-center" id="pinLabel" for="PIN">Ingrese
+                                    su PIN</label>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            @for (int i = 0; i < iconos.Length; i++)
+                            {
+                                <button id="@iconos[i]" type="button"
+                                    class="mdl-button mdl-js-button mdl-button--raised rounded !bg-zinc-900 text-white h-12 text-lg hover:!text-black hover:!bg-white"
+                                    onclick="addToPIN('@iconos[i]')">
+                                    @iconos[i]
+                                </button>
+                            }
+                        </div>
+                    </form>
+                    <div class="text-center text-sm mt-6">
+                        <span class="text-muted-foreground">¿Necesita una cuenta? </span>
+                        <a asp-action="RegistrarUsuario" asp-controller="Account" class="text-primary hover:underline">
+                            Registrarse
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+</div>
+<script>
+    function addToPIN(num) {
+        var inputPIN = document.getElementById('PIN');
+        var labelPIN = document.getElementById('pinLabel');
+
+        if (num === "➔") {
+            inputPIN.value = inputPIN.value.slice(0, -1);
+        } else if (num === "✔") {
+            enviarPeticionPOST(inputPIN.value);
+        } else {
+            if (inputPIN.value.length < 4) {
+                labelPIN.innerText = "";
+                inputPIN.value += num;
+            }
+            if (inputPIN.value.length === 0) {
+                labelPIN.innerText = "Ingrese su PIN";
+            }
+        }
+    }
+
+    function enviarPeticionPOST(pin) {
+        fetch('/verificar-pin', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ pin: pin }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("PIN válido!")
+            } else {
+                alert("PIN incorrecto, Inténtelo nuevamente.")
+            }
+        })
+        .catch(error => console.error("Error:", error));
+    }
+</script>
