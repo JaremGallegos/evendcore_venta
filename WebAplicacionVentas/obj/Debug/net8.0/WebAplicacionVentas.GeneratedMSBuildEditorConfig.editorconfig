@@ -17,99 +17,99 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAplicacionVentas
 build_property.RootNamespace = WebAplicacionVentas
-build_property.ProjectDir = d:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\
+build_property.ProjectDir = D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas
+build_property.MSBuildProjectDirectory = D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Index.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Completado.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Completado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xBY2NvdW50XENvbXBsZXRhZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Login.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xBY2NvdW50XExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Pago.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Pago.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xBY2NvdW50XFBhZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Register.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Verificacion.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Account/Verificacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xBY2NvdW50XFZlcmlmaWNhY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Documentation/Web.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Documentation/Web.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xEb2N1bWVudGF0aW9uXFdlYi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Index.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xQYWdlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/_Partials/_Banner.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/_Partials/_Banner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xfUGFydGlhbHNcX0Jhbm5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/_Partials/_Header.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/_Partials/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xfUGFydGlhbHNcX0hlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/_Partials/_Hero.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Landing/_Partials/_Hero.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xfUGFydGlhbHNcX0hlcm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/Home/Index.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUE9TXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/Index.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUE9TXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/_Partials/_Footer.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/_Partials/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUE9TXF9QYXJ0aWFsc1xfRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/_Partials/_Header.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/_Partials/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUE9TXF9QYXJ0aWFsc1xfSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/_Partials/_Sidebar.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/POS/_Partials/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUE9TXF9QYXJ0aWFsc1xfU2lkZWJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/Error.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/_Imports.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/_Imports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/_ViewImports.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/_ViewStart.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/_Layout.cshtml]
+[D:/CarpetaProtegida/CPO-2/evendcore_venta/WebAplicacionVentas/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fb2wq2hn66
