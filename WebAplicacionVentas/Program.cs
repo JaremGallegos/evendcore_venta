@@ -1,8 +1,8 @@
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
-using WebAplicacionVentas.Data.Central.Entitys;
-using WebAplicacionVentas.Data.Ventas.Entitys;
+using WebAplicacionVentas.Data.Central.Entities;
+using WebAplicacionVentas.Data.Ventas.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 

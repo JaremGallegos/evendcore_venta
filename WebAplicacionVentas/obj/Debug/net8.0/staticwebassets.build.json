@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k52CU/Rpd+X7hNg1BGVsHC0JJNck4wWtFzKx9fecbNQ=",
+  "Hash": "E3Y73FLxbYBMQWDX/uwspp8eZOuVkbPg4Bkj7BtNg1s=",
   "Source": "WebAplicacionVentas",
   "BasePath": "_content/WebAplicacionVentas",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\images\\google.svg",
+      "SourceId": "WebAplicacionVentas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\",
+      "BasePath": "_content/WebAplicacionVentas",
+      "RelativePath": "images/google.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\google.svg"
+    },
+    {
       "Identity": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\images\\Mistral-Logo.png",
       "SourceId": "WebAplicacionVentas",
       "SourceType": "Discovered",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Mistral-Logo.png"
+    },
+    {
+      "Identity": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\images\\pos_idee.svg",
+      "SourceId": "WebAplicacionVentas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\",
+      "BasePath": "_content/WebAplicacionVentas",
+      "RelativePath": "images/pos_idee.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pos_idee.svg"
     },
     {
       "Identity": "D:\\CarpetaProtegida\\CPO-2\\evendcore_venta\\WebAplicacionVentas\\wwwroot\\js\\site.js",

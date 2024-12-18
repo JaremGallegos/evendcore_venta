@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebAplicacionVentas.Data.Ventas.Entitys;
+namespace WebAplicacionVentas.Data.Ventas.Entities;
 
 public partial class VentasDbContext : DbContext
 {

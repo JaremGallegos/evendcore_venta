@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@319&family=Oleo+Script:wght@400;700&display=swap');
+
 html {
   font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
+  html {  
     font-size: 16px;
   }
 }
@@ -19,4 +21,12 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.meven {
+  font-family: 'Comme', sans-serif;
+}
+
+.meven-logo {
+  font-family: "Oleo Script", serif;
 }

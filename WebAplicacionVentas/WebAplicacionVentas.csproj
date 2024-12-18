@@ -7,25 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Landing\Pages\Account\REST\" />
+    <Folder Include="Controllers\Landing\Pages\Content\" />
     <Folder Include="Controllers\Shared\" />
-    <Folder Include="Data\Central\Entitys\" />
-    <Folder Include="Data\Ventas\" />
-    <Folder Include="Data\Ventas\Entitys\" />
+    <Folder Include="Data\Central\Entities\" />
+    <Folder Include="Data\JSON\" />
+    <Folder Include="Data\Ventas\Entities\" />
     <Folder Include="Helpers\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Models\POS\" />
     <Folder Include="Services\" />
     <Folder Include="Services\Landing\" />
     <Folder Include="Services\POS\" />
     <Folder Include="Services\Shared\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="ViewModels\Auth\" />
-    <Folder Include="ViewModels\Landing\" />
-    <Folder Include="ViewModels\POS\" />
-    <Folder Include="Views\Landing\Pages\Attendance\" />
-    <Folder Include="Views\Landing\Pages\Documentation\Learn\" />
-    <Folder Include="Views\Landing\Pages\Forum\" />
-    <Folder Include="Views\Landing\Pages\Updates\" />
+    <Folder Include="Views\Landing\Pages\Extension\" />
+    <Folder Include="Views\Landing\Pages\Pricing\" />
+    <Folder Include="Views\Landing\Pages\Product\" />
+    <Folder Include="Views\Landing\Pages\Resource\" />
+    <Folder Include="Views\Landing\Pages\Solution\" />
     <Folder Include="Views\POS\Home\Modules\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\landing\" />

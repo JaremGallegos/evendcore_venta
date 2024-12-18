@@ -32,6 +32,7 @@ BEGIN
 	SELECT DISTINCT category
 	FROM #TempCSV_products;
 	PRINT('[MENSAJE] Se insertó correctamente los datos del csv')
+
 END
 
 
@@ -195,3 +196,13 @@ VALUES
 ('Badge de cliente VIP'),
 ('Certificado de agradecimiento por fidelidad'),
 ('Acceso a promociones por cumpleaños');
+
+
+-- Insertar Datos Tabla Content
+INSERT INTO Central.content (title, description)
+VALUES 
+('Productos', 'Explora nuestra variedad de productos diseñados para satisfacer tus necesidades.'),
+('Soluciones', 'Descubre cómo nuestras soluciones pueden transformar tu negocio.'),
+('Recursos', 'Accede a guías, tutoriales y materiales de apoyo para aprovechar al máximo nuestros productos y servicios.'),
+('Extensiones', 'Personaliza y potencia tu experiencia con nuestras extensiones y herramientas adicionales.'),
+('Precios', 'Consulta nuestros planes y precios competitivos.');

@@ -1,19 +1,33 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model WebAplicacionVentas.Models.ViewModels.LandingVM
 @{
-    var modulos = new List<string>() {
-    "Inicio", "Documentación", "Actualizaciones", "Foro", "Asistencia"};
+
 }
-<nav class="w-full px-6 py-4 flex items-center justify-between relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-8">
-        <a href="/" class="text-2xl font-bold">
-            Mistral
-        </a>
-        <div class="flex items-center space-x-6">
-            @foreach (var modulo in modulos)
-            {
-                <button></button>
-            }
+<!-- Encabezado de la Landing -->
+<header class="border-b bg-white/80 background-blur-sm sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="h-14 flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <a class="meven-logo text-black text-2xl font-bold hover:no-underline no-underline hover:text-black" asp-controller="" asp-action="">
+                    Meven
+                </a>
+                <nav class="mb:flex items-center space-x-4">
+                    @foreach (var item in Model.Content) {
+                        <button class="meven text-xs font-light text-gray-700 items-center space-x-1 hover:bg-stone-200 rounded px-2 py-2" asp-controller="" asp-action="">
+                            @Html.DisplayFor(module => item.Title)
+                            @if (item.Title == "Productos" || item.Title == "Soluciones" || item.Title == "Recursos") {
+                                <i class="fa-solid fa-chevron-down"></i>
+                            }
+                        </button>
+                    }
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a class="meven text-black underline-offset-8 hover:no-underline hover:text-yellow-500" asp-controller="Login" asp-action="Login">Iniciar Sesión</a>
+                <a class="meven bg-[#0A2533] text-white rounded px-4 py-2 no-underline hover:no-underline" asp-controller="Register" asp-action="RegisterDemo">Solicitar Prueba</a>
+            </div>
         </div>
-</nav>
+    </div>
+</header>

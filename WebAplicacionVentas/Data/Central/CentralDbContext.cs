@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebAplicacionVentas.Data.Central.Entitys;
+namespace WebAplicacionVentas.Data.Central.Entities;
 
 public partial class CentralDbContext : DbContext
 {

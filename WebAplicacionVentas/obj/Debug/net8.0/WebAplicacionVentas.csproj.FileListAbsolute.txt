@@ -256,3 +256,4 @@ D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\bin\Debug\net8.0\r
 D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\CarpetaProtegida\CPO-2\evendcore_venta\WebAplicacionVentas\bin\Debug\net8.0\Data\JSON\zipcodes.pe.json

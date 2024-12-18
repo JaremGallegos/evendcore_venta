@@ -5,8 +5,16 @@ namespace WebAplicacionVentas.Controllers.Landing.Pages.Account
     public class RegisterController : Controller
     {
         // GET: RegisterController
-        public ActionResult Register() {
-            return View("~/Views/Landing/Pages/Account/Register.cshtml");
+        public ActionResult RegisterFree() {
+            return View("~/Views/Landing/Pages/Account/RegisterFree.cshtml");
+        }
+
+        public ActionResult RegisterDemo() {
+            return View("~/Views/Landing/Pages/Account/RegisterDemo.cshtml");
+        }
+
+        public ActionResult RegisterEnterprise() {
+            return View("~/Views/Landing/Pages/Account/RegisterEnterprise.cshtml");
         }
 
         public ActionResult Verificacion() {

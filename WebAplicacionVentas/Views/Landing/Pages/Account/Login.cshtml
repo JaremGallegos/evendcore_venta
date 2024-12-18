@@ -17,64 +17,70 @@
         ("password", "fa-lock")
     };
 }
-<div class="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-pink-100 flex flex-col items-center justify-center p-4">
-    <div class="w-full max-w-md space-y-8">
-        <!-- Logo -->
-        <div class="flex justify-center">
-            <img class="w-12 h-12 rounded-lg"
-                 src="~/images/Mistral-Logo.png" />
-        </div>
-
-        <!-- Headers -->
-        <div class="text-center">
-            <h1 class="text-2xl font-semibold text-gray-900">
-                Iniciar Sesión en Mistral
-            </h1>
-        </div>
-
-        <!-- Social Login Buttons -->
-        <div class="grid grid-cols-3 gap-3">
-            @foreach (var boton in botones) {
-                string caracteristicas = boton.nombre switch {
-                    "Apple" => "bg-black text-white",
-                    "GitHub" => "bg-black text-white",
-                    "Google" => "bg-white !text-gray-500 border !border-gray-200",
-                    _ => "bg-neutral-50"
-                };
-                <button class="btn btn-link w-full rounded @caracteristicas"><i class="@boton.iconos"></i>&#32;@textInfo.ToTitleCase(boton.nombre.ToLower())</button>
-            }
-        </div>
-
-        <!-- Divider -->
-        <div class="relativa">
-            <div>
-                <hr class="w-full border-t border-gray-400 mt-1 mb-2" />
+<div class="min-h-screen w-full flex">
+    <div class="flex-1 flex items-center justify-center px-8">
+        <div class="w-full max-w-[400px] space-y-6">
+            <!-- Logo -->
+            <div class="flex justify-center">
+                <img class="w-12 h-12 rounded-lg"
+                    src="~/images/Mistral-Logo.png" />
             </div>
-            <div class="relative flex justify-center text-sm">
-                <span class="px-2 text-gray-500">or</span>
-            </div>
-        </div>
 
-        <form class="space-y-6 mt-4" method="GET">
-            @foreach (var dato in formulario) {
-                string placeholder = dato.tipo switch {
-                    "email" => "Email address",
-                    "password" => "Password",
-                    _ => ""
-                };
-                <div class="has-icon-left">
-                    <input class="bg-gray-50 w-full form-input" type="@dato.tipo" placeholder="@placeholder" />
-                    <i class="form-icon fa-solid @dato.icono"></i>
+            <!-- Headers -->
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold text-gray-900">
+                    ¡Bienvenido a Mistral!
+                </h1>
+            </div>
+
+            <!-- Social Login Buttons -->
+            <div class="grid grid-cols-3 gap-3">
+                @foreach (var boton in botones) {
+                    string caracteristicas = boton.nombre switch {
+                        "Apple" => "bg-black text-white",
+                        "GitHub" => "bg-black text-white",
+                        "Google" => "bg-white !text-gray-500 border !border-gray-200",
+                        _ => "bg-neutral-50"
+                    };
+                    <button class="btn btn-link w-full rounded @caracteristicas"><i class="@boton.iconos"></i>&#32;@textInfo.ToTitleCase(boton.nombre.ToLower())</button>
+                }
+            </div>
+
+            <!-- Divider -->
+            <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                    <div class="w-full border-t"></div>
                 </div>
-            }
-            <input type="submit" value="Iniciar Sesión en Mistral" class="btn btn-link rounded w-full bg-black hover:bg-gray-200 text-white">
-        </form>
+                <div class="relative flex justify-center text-xs uppercase">
+                    <span class="bg-white px-2 text-gray-500">o</span>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <form class="space-y-6 mt-4" method="GET">
+                    <div class="space-y-2 mb-3">
+                        <label for="email" class="text-sm">Correo</label>
+                        <input id="email" type="email" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-primary" />
+                    </div>
+                    
+                    <div class="space-y-2 mb-3">
+                        <label for="email" class="text-sm">Contraseña</label>
+                        <input id="email" type="password" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-primary" />
+                    </div>
 
-        <!-- Registro Link -->
-        <p class="text-center text-sm">
-            No tienes una cuenta?<br>
-            <a asp-controller="Register" asp-action="Register" class="text-gray-900 hover:no-underline no-underline">Regístrate →</a>
-        </p>
+                    <!-- Boton de Registro -->
+                    <div class="space-y-2">
+                        <input type="submit" value="Iniciar Sesión en Mistral" class="meven w-full bg-[#FFD233] hover:bg-[#FFD233]/90 text-black py-2 rounded-md" />
+                    </div>
+                </form>
+            </div>
 
+            <!-- Registro Link -->
+            <div class="flex items-center justify-between text-sm">
+                <span class="text-gray-500">
+                    ¿Todavía no tienes una cuenta?
+                    <a class="text-primary hover:underline" asp-controller="Register" asp-action="RegisterFree">Registrarse</a>
+                </span>
+            </div>
+        </div>
     </div>
 </div>
